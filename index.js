@@ -1,6 +1,7 @@
 exports.add = add
 exports.has = has
 exports.remove = remove
+exports.swap = swap
 
 function add (list, item) {
   if (has(list, item)) return item
@@ -23,4 +24,13 @@ function remove (list, item) {
   }
 
   return item
+}
+
+function swap (list, a, b) {
+  if (!has(list, a) || !has(list, b)) return
+  var tmp = a._index
+  a._index = b._index
+  list[a._index] = a
+  b._index = tmp
+  list[b._index] = b
 }

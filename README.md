@@ -44,6 +44,10 @@ Remove an item from the set. Might change the order of the list as well.
 
 Returns `true` if the item is in the list and `false` otherwise
 
+#### `set.swap(list, a, b)`
+
+Swap the positions of two elements in the set
+
 ## License
 
 MIT

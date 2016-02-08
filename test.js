@@ -96,3 +96,31 @@ tape('has', function (t) {
   t.ok(set.has(list, b))
   t.end()
 })
+
+tape('swap', function (t) {
+  var list = []
+  var a = {hello: 'world'}
+  var b = {hello: 'verden'}
+
+  set.add(list, a)
+  set.add(list, b)
+
+  set.swap(list, a, b)
+  t.same(list, [b, a])
+
+  set.swap(list, a, b)
+  t.same(list, [a, b])
+
+  t.end()
+})
+
+tape('swap same', function (t) {
+  var list = []
+  var a = {hello: 'world'}
+
+  set.add(list, a)
+
+  set.swap(list, a, a)
+  t.same(list, [a])
+  t.end()
+})
