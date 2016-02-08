@@ -6,6 +6,8 @@ A couple of functions that make it easy to maintain an unordered set as an array
 npm install unordered-set
 ```
 
+[![build status](https://travis-ci.org/mafintosh/unordered-set.svg?branch=master)](https://travis-ci.org/mafintosh/unordered-set)
+
 ## Usage
 
 ``` js
