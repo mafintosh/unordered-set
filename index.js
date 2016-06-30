@@ -15,7 +15,7 @@ function has (list, item) {
 }
 
 function remove (list, item) {
-  if (!has(list, item)) return item
+  if (!has(list, item)) return null
 
   var last = list.pop()
   if (last !== item) {
