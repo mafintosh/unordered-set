@@ -1,6 +1,6 @@
 {
   "name": "unordered-set",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A couple of functions that make it easy to maintain an unordered set as an array in an efficient way",
   "main": "index.js",
   "dependencies": {},
