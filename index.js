@@ -11,7 +11,7 @@ function add (list, item) {
 }
 
 function has (list, item) {
-  return list[item._index] === item
+  return item._index < list.length && list[item._index] === item
 }
 
 function remove (list, item) {
